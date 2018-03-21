@@ -134,9 +134,15 @@ HashMap使用Key对象的hashCode\(\)和equals\(\)方法去决定key-value对的
 
 比如，我有一个类MyKey，在HashMap中使用它。
 
-| 1234567 | `//传递给MyKey的name参数被用于equals()和hashCode()中MyKey key =newMyKey('Pankaj');//assume hashCode=1234myHashMap.put(key,'Value');// 以下的代码会改变key的hashCode()和equals()值key.setName('Amit');//assume new hashCode=7890//下面会返回null，因为HashMap会尝试查找存储同样索引的key，而key已被改变了，匹配失败，返回nullmyHashMap.get(newMyKey('Pankaj'));` |
-| :--- | :--- |
-
+```java
+//传递给MyKey的name参数被用于equals()和hashCode()中
+MyKey key = new MyKey('Pankaj'); //assume hashCode=1234
+myHashMap.put(key, 'Value');
+// 以下的代码会改变key的hashCode()和equals()值
+key.setName('Amit'); //assume new hashCode=7890
+//下面会返回null，因为HashMap会尝试查找存储同样索引的key，而key已被改变了，匹配失败，返回null
+myHashMap.get(new MyKey('Pankaj'));
+```
 
 那就是为何String和Integer被作为HashMap的key大量使用。
 
