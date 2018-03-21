@@ -82,10 +82,6 @@ while(it.hasNext()){
 }
 ```
 
-|  |  |
-| :---: | :--- |
-
-
 使用迭代器更加线程安全，因为它可以确保，在当前遍历的集合元素被更改的时候，它会抛出ConcurrentModificationException。
 
 **12.通过迭代器fail-fast属性，你明白了什么？**
