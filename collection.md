@@ -68,8 +68,22 @@ Enumeration的速度是Iterator的两倍，也使用更少的内存。Enumeratio
 
 **11.遍历一个List有哪些不同的方式？**
 
-| 1234567891011 | `List<String> strList =newArrayList<>();//使用for-each循环for(String obj : strList){System.out.println(obj);}//using iteratorIterator<String> it = strList.iterator();while(it.hasNext()){String obj = it.next();System.out.println(obj);}` |
-| :--- | :--- |
+```java
+List<String> strList = new ArrayList<>();
+//使用for-each循环
+for(String obj : strList){
+  System.out.println(obj);
+}
+//using iterator
+Iterator<String> it = strList.iterator();
+while(it.hasNext()){
+  String obj = it.next();
+  System.out.println(obj);
+}
+```
+
+|  |  |
+| :---: | :--- |
 
 
 使用迭代器更加线程安全，因为它可以确保，在当前遍历的集合元素被更改的时候，它会抛出ConcurrentModificationException。
