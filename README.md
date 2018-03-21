@@ -6,7 +6,7 @@ Collection接口是集合类的根接口，Java中没有提供这个接口的直
 
 Map是Java.util包中的另一个接口，它和Collection接口没有关系，是相互独立的，但是都属于集合类的一部分。Map包含了key-value对。Map不能包含重复的key，但是可以包含相同的value。
 
-**层次关系**
+* **层次关系**
 
 ## ![](/assets/import.png)
 
