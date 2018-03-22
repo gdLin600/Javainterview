@@ -8,7 +8,7 @@
 
     * [ ]  \| - List： 列表
             * [ ] \| - LinkedList：基于链表的List
-            * [ ] \| - ArrayList
+            * [ ] \| - ArrayList：基于数组的List
 
 
 
