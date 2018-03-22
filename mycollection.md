@@ -7,7 +7,7 @@
 ---
 
     * [ ]  \| - List： 列表
-            * [ ] \| - LinkedList
+            * [ ] \| - LinkedList：基于链表的List
             * [ ] \| - 
 
 
